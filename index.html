@@ -310,7 +310,29 @@
             margin-top: 40px;
         }
     }
+    .service-card {
+    /* This makes it easy to center content if you wish */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Use 'flex-start' for left-alignment */
+    text-align: center; /* Use 'left' for left-alignment */
+    }
 
+    .service-icon {
+    margin-bottom: 1rem;
+    /* You can change the icon color easily here */
+    stroke: #28a745; /* This is the new green color */
+}
+
+    .service-card h4 {
+        margin-bottom: 0.5rem; /* Adjust spacing below the heading */
+    }
+    .service-icon {
+    width: 44px;          /* Sets a consistent width */
+    height: 44px;         /* Sets a consistent height */
+    object-fit: contain;  /* Ensures your image scales nicely */
+    margin-bottom: 1rem;  /* Adds space between the icon and the heading */
+    }
     </style>
 </head>
 <body>
@@ -357,38 +379,50 @@
         </div>
     </section>
     
-    <section id="services" class="section-full-width-bg">
-         <div class="content-container">
-            <h2 class="section-title">Our Core Services</h2>
-            <p class="section-subtitle">A complete suite of logistics solutions designed for your success in India.</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h4>E-commerce Fulfillment</h4>
-                    <p>Fast, accurate pick, pack, and ship services to dispatch your orders promptly and professionally.</p>
-                </div>
-                <div class="service-card">
-                    <h4>Warehousing & Inventory</h4>
-                    <p>Secure facilities in Punjab with real-time inventory tracking so you always know your stock levels.</p>
-                </div>
-                <div class="service-card">
-                    <h4>Pan-India Last-Mile Delivery</h4>
-                    <p>A robust delivery network covering every corner of India, ensuring reliable 2-5 day delivery.</p>
-                </div>
-                <div class="service-card">
-                    <h4>Returns Management</h4>
-                    <p>Efficient and hassle-free reverse logistics to improve customer satisfaction and recover product value.</p>
-                </div>
-                 <div class="service-card">
-                    <h4>Cash on Delivery (COD)</h4>
-                    <p>Unlock a massive market segment by offering COD. We handle the entire collection and remittance process.</p>
-                </div>
-                <div class="service-card">
-                    <h4>Customs & Freight Support</h4>
-                    <p>We provide expert facilitation to help you navigate the complexities of bulk shipping and customs into India.</p>
-                </div>
+   <section id="services" class="section-full-width-bg">
+    <div class="content-container">
+        <h2 class="section-title">Our Core Services</h2>
+        <p class="section-subtitle">A complete suite of logistics solutions designed for your success in India.</p>
+        <div class="services-grid">
+
+            <div class="service-card">
+                <img src="Assets/svg1.png" alt="E-commerce Fulfillment Icon" class="service-icon">
+                <h4>E-commerce Fulfillment</h4>
+                <p>Fast, accurate pick, pack, and ship services to dispatch your orders promptly and professionally.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="Assets/svg2.png" alt="Warehousing & Inventory Icon" class="service-icon">
+                <h4>Warehousing & Inventory</h4>
+                <p>Secure facilities in Punjab with real-time inventory tracking so you always know your stock levels.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="Assets/svg3.png" alt="Last-Mile Delivery Icon" class="service-icon">
+                <h4>Pan-India Last-Mile Delivery</h4>
+                <p>A robust delivery network covering every corner of India, ensuring reliable 2-5 day delivery.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="Assets/svg4.png" alt="Returns Management Icon" class="service-icon">
+                <h4>Returns Management</h4>
+                <p>Efficient and hassle-free reverse logistics to improve customer satisfaction and recover product value.</p>
+            </div>
+
+             <div class="service-card">
+                <img src="Assets/svg5.png" alt="Cash on Delivery Icon" class="service-icon">
+                <h4>Cash on Delivery (COD)</h4>
+                <p>Unlock a massive market segment by offering COD. We handle the entire collection and remittance process.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="Assets/svg6.png" alt="Customs & Freight Support Icon" class="service-icon">
+                <h4>Customs & Freight Support</h4>
+                <p>We provide expert facilitation to help you navigate the complexities of bulk shipping and customs into India.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="how-it-works">
         <div class="content-container">
@@ -422,21 +456,21 @@
             <div class="founder-grid">
                 <div class="founder-col">
                     <img src="Assets/Deep.jpg" alt="Photo of the Founder">
-                    <h4>[Founder's Name]</h4>
+                    <h4>Deep Kanwar Singh</h4>
                     <h5>Founder & CEO</h5>
-                    <p>With 15+ years in supply chain management, [Name] founded DirectHaul to solve the logistics challenges he saw D2C brands facing when entering India.</p>
+                    <p>With 15+ years in supply chain management, Deep founded DirectHaul to solve the logistics challenges he saw D2C brands facing when entering India.</p>
                 </div>
                 <div class="founder-col">
-                    <img src="https://via.placeholder.com/150/1E8449/FFFFFF?text=HO" alt="Photo of Head of Operations">
-                    <h4>[Name]</h4>
-                    <h5>Head of Operations</h5>
-                    <p>As leader of our on-ground operations, [Name] ensures every order is picked, packed, and shipped with precision and care from our Punjab facility.</p>
+                    <img src="Assets/Akshit.jpeg" alt="Photo of Head of Operations">
+                    <h4>Akshit Gupta</h4>
+                    <h5>Co-Founder & COO</h5>
+                    <p>As leader of our on-ground operations, Akshit ensures every order is picked, packed, and shipped with precision and care from our Punjab facility.</p>
                 </div>
                 <div class="founder-col">
-                    <img src="https://via.placeholder.com/150/1E8449/FFFFFF?text=HP" alt="Photo of Head of Client Partnerships">
-                    <h4>[Name]</h4>
-                    <h5>Head of Client Partnerships</h5>
-                    <p>[Name] is the primary contact for our North American partners, dedicated to building strong relationships and ensuring a smooth, successful partnership.</p>
+                    <img src="Assets/Aalam.jpeg" alt="Photo of Head of Client Partnerships">
+                    <h4>Aalam Dhillon</h4>
+                    <h5>Co-Founder & CTO</h5>
+                    <p>Aalam is the primary contact for our North American partners, dedicated to building strong relationships and ensuring a smooth, successful partnership.</p>
                 </div>
             </div>
         </div>
@@ -445,17 +479,9 @@
     <section id="contact">
         <div class="content-container">
             <h2 class="section-title">Let's Build Your Success in India</h2>
-            <p class="section-subtitle">Fill out the form below to get in touch. We'll provide a complimentary analysis of your brand's potential in the Indian market.</p>
+            <p class="section-subtitle">Click the button below and We'll provide a complimentary analysis of your brand's potential in the Indian market.</p>
             
-            <div class="contact-form">
-                <form action="https://formspree.io/f/directhaulindia@gmail.com" method="POST">
-                    <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" required></div>
-                    <div class="form-group"><label for="company">Company Name</label><input type="text" id="company" name="company" required></div>
-                    <div class="form-group"><label for="email">Work Email</label><input type="email" id="email" name="email" required></div>
-                    <div class="form-group"><label for="message">How can we help you?</label><textarea id="message" name="message" required></textarea></div>
-                    <button type="submit" class="cta-button" style="width: 100%; padding: 15px; font-size: 1.1rem;">Send Message</button>
-                </form>
-            </div>
+           <a href="mailto:directhaulindia@gmail.com"><button type="submit" class="cta-button" style="width: 100%; padding: 15px; font-size: 1.1rem;">Let's Connect</button></a>
         </div>
     </section>
 </main>
