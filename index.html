@@ -220,10 +220,30 @@
     .founder-col { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.07); transition: transform 0.3s ease; }
     .founder-col:hover { transform: translateY(-5px); }
     .founder-col img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid var(--border-color); }
-    .founder-col h4 { font-size: 1.3rem; margin-bottom: 5px; }
-    .founder-col h5 { font-size: 1rem; color: var(--primary-color); font-weight: bold; margin-bottom: 15px; }
-    .founder-col p { font-size: 0.95rem; color: var(--text-light); }
-    
+    .founder-col h4 {
+    font-size: 1.4rem;
+    /* REMOVED all default margins from the heading */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.founder-col h5 {
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    /* REMOVED top margin to pull it up to the h4 */
+    margin-top: 0;
+    /* ADDED specific space below the role, before the paragraph */
+    margin-bottom: 15px; 
+}
+
+.founder-col p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-top: 0;
+    /* ADD THIS LINE to justify the paragraph text */
+    text-align: justify;
+}
     .contact-form { max-width: 800px; margin: 30px auto 0 auto; text-align: left; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
     .form-group { margin-bottom: 20px; }
     .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
@@ -572,19 +592,19 @@
                     <img src="Assets/Deep.jpeg" alt="Photo of the Founder">
                     <h4>Deep Kanwar Singh</h4>
                     <h5>Founder & CEO</h5>
-                    <p>With 15+ years in supply chain management, Deep founded DirectHaul to solve the logistics challenges he saw D2C brands facing when entering India.</p>
+                    <p>Deep founded DirectHaul with a singular vision: to make India an accessible and thriving market for the global brands he follows and admires. He leads the strategy to simplify Indian logistics for global brands.</p>
                 </div>
                 <div class="founder-col">
                     <img src="Assets/Akshit.jpeg" alt="Photo of Head of Operations">
                     <h4>Akshit Gupta</h4>
                     <h5>Co-Founder & COO</h5>
-                    <p>As leader of our on-ground operations, Akshit ensures every order is picked, packed, and shipped with precision and care from our Punjab facility.</p>
+                    <p>Akshit is building our operational foundation from the ground up. He ensures every single order moves through our Punjab facility with a relentless focus on the speed and precision that customers deserve.</p>
                 </div>
                 <div class="founder-col">
                     <img src="Assets/Aalam.jpg" alt="Photo of Head of Client Partnerships">
                     <h4>Aalam Dhillon</h4>
                     <h5>Co-Founder & CTO</h5>
-                    <p>Aalam is the primary contact for our North American partners, dedicated to building strong relationships and ensuring a smooth, successful partnership.</p>
+                    <p>Aalam is building the technology that makes complex logistics feel simple. He is creating a transparent platform that gives our partners real-time visibility and control over their entire fulfillment process in India.</p>
                 </div>
             </div>
         </div>
