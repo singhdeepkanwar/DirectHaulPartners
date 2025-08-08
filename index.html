@@ -158,8 +158,9 @@
     }
     
     .hero p {
-        font-size: 1.1rem;
-    }
+    font-size: 1.1rem;
+    margin-bottom: 3rem; /* ADD THIS LINE */
+}
 
     .hero .cta-button {
         padding: 16px 32px;
@@ -222,9 +223,9 @@
     /* --- Founder Section - Layout Adjustments for Larger Cards --- */
 .founder-grid {
     display: grid;
-    /* This rule will now work correctly because the container is wider */
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 40px; 
+    /* This rule creates a single column on mobile */
+    grid-template-columns: 1fr; 
+    gap: 30px; /* Adjust gap for mobile */
     text-align: center;
 }
 #founder .content-container {
