@@ -41,10 +41,33 @@
         .nav-links a { color: var(--text-dark); text-decoration: none; font-weight: 500; transition: color 0.3s ease; font-size: 1.1rem; padding: 1rem 1.5rem; text-align: center; }
         .nav-links a:hover { color: var(--primary-color); }
         .hamburger { display: flex; flex-direction: column; justify-content: space-around; width: 2rem; height: 2rem; background: transparent; border: none; cursor: pointer; padding: 0; z-index: 10; }
-        .hamburger .line { width: 2rem; height: 0.25rem; background-color: var(--text-dark); border-radius: 10px; transition: all 0.3s linear; }
-        .hamburger.open .line:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-        .hamburger.open .line:nth-child(2) { opacity: 0; }
-        .hamburger.open .line:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
+    
+.hamburger .line {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: var(--text-dark);
+    border-radius: 10px;
+    /* Ensure a smooth transition and correct origin point */
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transform-origin: center;
+}
+
+/* This is the corrected block */
+.hamburger.open .line:nth-child(1) {
+    /* Moves the top bar down to the center, then rotates */
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.open .line:nth-child(2) {
+    /* Fades out the middle bar */
+    transform: scaleX(0);
+    opacity: 0;
+}
+
+.hamburger.open .line:nth-child(3) {
+    /* Moves the bottom bar up to the center, then rotates */
+    transform: translateY(-10px) rotate(-45deg);
+}
 
         /* --- General Section Styling --- */
         section { padding: 60px 1.5rem; overflow: hidden; /* Important for animations */ }
