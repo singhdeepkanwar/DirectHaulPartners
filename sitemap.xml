@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- 
+    Homepage: This is your most important page.
+    - loc: The exact URL.
+    - lastmod: The date the content was last updated (YYYY-MM-DD).
+    - changefreq: How often the page is likely to change (e.g., yearly, monthly, weekly).
+    - priority: The importance of this page relative to others (1.0 is the highest).
+    -->
+    <url>
+        <loc>https://www.directhaul.in/</loc>
+        <lastmod>2025-08-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- 
+    About Us Page: This is your second most important page.
+    Priority is slightly lower than the homepage but still very high.
+    -->
+    <url>
+        <loc>https://www.directhaul.in/about.html</loc>
+        <lastmod>2025-08-07</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 
+    Add other pages here as you create them. 
+    For example, if you create a blog or a dedicated services page:
+    
+    <url>
+        <loc>https://www.directhaul.in/blog.html</loc>
+        <lastmod>2025-08-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.directhaul.in/services.html</loc>
+        <lastmod>2025-08-07</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    -->
+
+</urlset>
